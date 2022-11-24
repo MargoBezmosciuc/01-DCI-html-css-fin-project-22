@@ -170,8 +170,6 @@ main .container2 {
   gap: 3rem;
 }
 main .container2 .box {
-  position: relative;
-  overflow: hidden;
   border-radius: 10px;
   width: 80%;
   height: 90vh;
@@ -179,32 +177,26 @@ main .container2 .box {
   background-size: cover;
   background-position: center;
 }
-main .container2 .box .text {
+main .container2 .box:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+main .container2 .text {
+  width: 26vw;
   position: relative;
   font-size: 8rem;
   padding: 2rem;
-  z-index: -1;
-  /* visibility: hidden; */
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  position: absolute;
-  z-index: 1;
-}
-main .container2 .box:hover {
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  /* filter: blur(5px); */
 }
 main .container2 .text:hover {
   visibility: visible;
   opacity: 1;
   position: absolute;
   z-index: 100;
-  background-color: rgba(128, 128, 128, 0.26);
+  background-color: rgba(128, 128, 128, 0.274);
 }
 main .container2 .start-01 {
   background-image: url(/img/start01.jpg);
-  display: block;
-  aspect-ratio: 1/1;
 }
 main .container2 .start-02 {
   background-image: url(/img/start2.jpg);
@@ -260,8 +252,9 @@ main .container4 img {
 }
 main .container4 img:hover {
   border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 50%;
   transform: scale(1.1);
+  transition: all 0.7s linear;
 }
 main .container4 .box3 {
   display: flex;
