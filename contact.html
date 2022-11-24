@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/img/logo2.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="contact-us">
+    <header>
+      <nav>
+        <img class="logo" src="/img/logo2.png" alt="company logo" />
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/index.html" href="#about-us">About Us</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container-main">
+
+      <div class="box3">
+        <form class="reservationForm" action="" method="post">
+          <!-- <fieldset> -->
+          <!-- <legend>Reservation Form</legend> -->
+
+          <label class="labelstyle" for="name">First and Last Name</label>
+          <input type="text" id="name" placeholder="Muster Mustermann" />
+          <label class="labelstyle" for="email">Where should i wrote you</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="mister.mustermann@muster.com"
+          />
+          <label class="labelstyle" for="datetime">When I can call you?</label>
+          <input
+            type="datetime-local"
+            name="date-time"
+            id="datetime"
+            min="2022-10-19T00:00"
+            max="2023-10-18T00:00"
+          />
+      
+          <!-- </fieldset> -->
+          <button class="labelstyle buttonstyle" type="submit">
+            Submit
+          </button>
+          <img src="/img/logo2.png" alt="">
+        </form>
+      </div>
+    </main>
+    <footer>
+        <h6>Let's Work Together &#8482;</h6>
+        <div class="footer-1">
+          <h5>&#169; Design & Dev by MarGo</h5>
+          <ul class="icon-list">
+            <li><a href="#" class="fa-brands fa-facebook"></a></li>
+            <li><a href="#" class="fa-brands fa-instagram"></a></li>
+            <li><a href="#" class="fa-brands fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>

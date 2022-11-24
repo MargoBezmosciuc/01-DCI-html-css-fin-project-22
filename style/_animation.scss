@@ -1,0 +1,92 @@
+.container5 {
+  position: absolute;
+  width: 100%;
+  .running-line1 {
+    width: 100%;
+    font-size: 5rem;
+    background-color: #fff;
+    color: #cf0a0a;
+    display: flex;
+    align-items: center;
+    animation-name: running-line1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    translate: 0.5s;
+  }
+  @keyframes running-line1 {
+    0% {
+      height: 10vh;
+    }
+    100% {
+      height: 3vh;
+    }
+    0% {
+      height: 10vh;
+    }
+  }
+  .running-text1 {
+    translate: 5s;
+    transform: translateX(100%);
+    animation: running-text1 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  @keyframes running-text1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .running-line2 {
+    width: 100%;
+    font-size: 5rem;
+    color: #fff;
+    background-color: #cf0a0a;
+    display: flex;
+    align-items: center;
+    animation-name: running-line2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    translate: 0.5s;
+  }
+  @keyframes running-line2 {
+    0% {
+      height: 3vh;
+    }
+    100% {
+      height: 10vh;
+    }
+    0% {
+      height: 3vh;
+    }
+  }
+  .running-text2 {
+    translate: 5s;
+    transform: translateX(-100%);
+    animation: running-text2 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  @keyframes running-text2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
